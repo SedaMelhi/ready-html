@@ -97,12 +97,19 @@ ul{
 }
 .two p{
     width: 100%;
-	
 	color: #000;
 	width: 60%;
 	margin: 50px auto 0;
 	font-size: calc(var(--index) * 1);
 	line-height: calc(var(--index) * 1);
+}
+.two p::selection {
+	color: #800;
+	background-color: orange;
+}
+.two li::selection {
+	color: #800;
+	background-color: orange;
 }
 .run{
 	transition: 1.5s;
