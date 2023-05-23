@@ -112,6 +112,7 @@ body {
 	font-weight: 900;
 	color: var(--text);
 	text-shadow: 0 0 15px #9d822b;
+	margin-top: -100px;
 }
 .layers__title {
 	font-size: calc(var(--index) * 2.65);
@@ -163,4 +164,42 @@ body {
 	opacity: .45;
 	font-size: calc(var(--index) * .75);
 	letter-spacing: calc(var(--index) / 37.5);
+}
+.small{
+	width: calc(var(--index) * .6);
+	transform: rotate(40deg);
+	position: absolute;
+	z-index: 999999999;	
+	opacity: 0.7;
+}
+.small1{
+	bottom: 60%;
+	left: 50px;
+}
+
+.small2{
+	bottom: 53%;
+	right: 50px;
+	transform: rotate(-25deg);
+}
+.opacity{
+	opacity: 0;
+	transition: 0.5s;
+	z-index: 99999999;
+	width: 60%;
+	margin: 0 auto;
+}
+.opacity_none{
+	opacity: 1
+}
+.small3{
+	transform: rotate(-20deg);
+	bottom: 20%;
+	right: 10px;
+}
+.small4{
+	width: calc(var(--index) * .5);
+	transform: rotate(-20deg);
+	bottom: 1%;
+	left: 5%;
 }
