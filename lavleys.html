@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/2.css" />
-    <title>Document</title>
+    <link rel="icon" href="./images/juk.png" />
+    <title>Квест: Леди баг и супер код</title>
   </head>
   <body>
     <div class="kvest">
@@ -14,27 +15,10 @@
 
         <div class="arrow">
           <p>Наступи на одного и разворошишь их гнездо.</p>
-          <a href="./ready-html/index.html">⇨</a>
+          <a href="./next/index.html">⇨</a>
         </div>
       </div>
     </div>
-    <script>
-      let text = 'Глава II. Лес багов.';
-      const typingText = document.getElementById('typing-text');
-      let check = true;
-      let index = 0;
-      function typeWriter() {
-        if (index < text.length) {
-          typingText.textContent += text.charAt(index);
-          index++;
-          setTimeout(typeWriter, 80); // Задержка между появлением символов (в миллисекундах)
-        } else if (check) {
-          check = false;
-          let arrow = document.querySelector('.arrow');
-          arrow.style.opacity = '1';
-        }
-      }
-      typeWriter();
-    </script>
+    <script src="js/2.js"></script>
   </body>
 </html>

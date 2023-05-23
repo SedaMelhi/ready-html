@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Document</title>
+    <link rel="icon" href="./../images/juk.png" />
+    <title>Квест: Леди баг и супер код</title>
 
     <link rel="stylesheet" href="css/main.css" />
 
@@ -50,17 +50,24 @@
 
         <article class="main-article" style="background-image: url(img/dungeon.jpg)">
           <div class="main-article__content">
-            <!-- <h2 class="main-article__header">Отыщи их всех, чтобы продолжить</h2>
+            <h2 class="main-article__header">Отыщи их всех, чтобы продолжить</h2>
             <p class="main-article__paragraph">
               Что говорит программист своему компьютеру, когда он находит баг? "Это не баг, а новая
               фича, я тебя понял!"
-            </p> -->
-            <h2 class="main-article__header">... ..- .--. . .-. -.-. --- -.. .</h2>
-            <p class="main-article__paragraph">http://127.0.0.1:5500/ready-html/index.html/</p>
+            </p>
+            <div class="last hidden">
+              <h2 class="main-article__header" id="typing-text"></h2>
+              <input type="text" class="code" />
+              <button class="btn">Проверить</button>
+              <p class="finish"></p>
+            </div>
+
             <p class="opacity"></p>
           </div>
         </article>
       </div>
     </div>
+    <img class="soundbutton paused" src="../images/sound.gif" alt="Alt" />
+    <audio class="audio" src="../media/ambient.mp3" loop></audio>
   </body>
 </html>

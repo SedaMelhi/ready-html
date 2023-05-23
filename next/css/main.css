@@ -233,3 +233,64 @@ a{
 	color: inherit;
 	cursor: pointer;
 }
+
+.code{
+	border: none;
+	width: 300px;
+	height: 40px;
+	border-radius: 4px;
+	padding: 0 10px;
+	font-size: 14px;
+	opacity: 0.9;
+	color: #546d97;
+	text-align: center;
+}
+.code:focus{
+	border: none;
+	outline: none;
+}
+
+.btn{
+	display: block;
+    width: 150px;
+    height: 35px;
+    margin: 10px auto;
+    background-color: #789ddd;
+    border: none;
+	
+}
+.finish{
+	width: 70%;
+	margin: 40px auto;
+}
+.finish a {
+	color: #789ddd;
+}
+
+.frame{
+	position: absolute;
+	z-index: 5;
+}
+
+.soundbutton {
+	position: fixed;
+	bottom: 5vh;
+	right: 5vw;
+	cursor: pointer;
+	width: 24px;
+	transition: .25s ease;
+}
+.soundbutton.paused {
+	opacity: .25;
+}
+
+.conf1{
+	position: absolute;
+	top: 30px;
+	left: 100px;
+}
+.conf2{
+	position: absolute;
+	top: 30px;
+	right: 100px;
+}
