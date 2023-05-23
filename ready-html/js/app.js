@@ -23,9 +23,29 @@ window.addEventListener('load', () => {
             ? 'Второй найден!'
             : count == 3
             ? 'Третий найден!'
-            : 'Найдены все! Я вижу ты опытная Леди Баг. Но согласись, эти ошибки смотрелись довольно мило. Однако пора двигаться дальше. Тут будет ребус. ';
+            : '';
         text.classList.add('opacity_none');
       });
+
+      if (count === 4) {
+        window.scrollTo(0, 0);
+        const link = document.createElement('a');
+        link.addEventListener('click', () => {
+          window.scrollTo(0, 2000);
+          console.log(1215165);
+        });
+        document.querySelector(
+          '.next',
+        ).innerHTML = `Я вижу ты опытная Леди Баг, ты нашла все баги!. Но согласись, эти ошибки смотрелись довольно мило. Однако пора двигаться дальше. Тут будет `;
+        link.innerText = 'ребус. Жми';
+        document.querySelector('.next').append(link);
+
+        setTimeout(() => {
+          texts[0].classList.remove('opacity_none');
+          texts[1].classList.remove('opacity_none');
+          document.querySelector('.next').classList.add('next_show');
+        }, 500);
+      }
       bag.remove();
     }),
   );
