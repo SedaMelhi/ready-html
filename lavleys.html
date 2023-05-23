@@ -13,8 +13,8 @@
         <h2 id="typing-text"></h2>
 
         <div class="arrow">
-          <p>Оторви ему одну голову, и на его месте вырастут три</p>
-          ⇨
+          <p>Оторви ему одну голову, и на его месте вырастут три.</p>
+          <a href="./ready-html/index.html">⇨</a>
         </div>
       </div>
     </div>
@@ -23,7 +23,6 @@
       const typingText = document.getElementById('typing-text');
       let check = true;
       let index = 0;
-
       function typeWriter() {
         if (index < text.length) {
           typingText.textContent += text.charAt(index);
@@ -33,12 +32,8 @@
           check = false;
           let arrow = document.querySelector('.arrow');
           arrow.style.opacity = '1';
-          arrow.addEventListener('click', () => {
-            document.querySelector('.three').classList.add('run');
-          });
         }
       }
-
       typeWriter();
     </script>
   </body>
