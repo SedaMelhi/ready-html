@@ -31,6 +31,10 @@ body {
 	font-weight: 300;
     min-height: 100vh;
 }
+body::selection {
+    background-color: red;
+    color: white;
+}
 
 .kvest{
 	width: 100%;
@@ -40,6 +44,10 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+}
+.kvest::selection {
+    background-color: red;
+    color: white;
 }
 .three{
 	width: 100%;
